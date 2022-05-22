@@ -35,7 +35,7 @@ remove( [criteria], [callback] )}	컬렉션의 데이터를 삭제한다.
 - find(조건, 필드, 옵션, 콜백);
 - findOne(조건, 필드, 옵션, 콜백);
 
-``` javascrept
+``` JavaScript
 
 # find
 const query = Person.find({name : 'charmsae'});
@@ -79,7 +79,7 @@ const query = Person.findeOne({name : 'charmsae'}).select('age');
 - findOneAndRemove(조건, 옵션, 콜백);
 - findByIdAndRemove(아이디, 옵션, 콜백);
 
-``` javascrept
+``` JavaScript
 
 const query = Person.deleteOne({name : 'charmsae'});
 //Person이라는 컬렉션 안에서 name이 charmsae인 documents를 '하나' 삭제합니다.
