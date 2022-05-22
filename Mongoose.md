@@ -17,13 +17,12 @@ title의 타입은 뭔지 등의 정보에 대한 하나하나의 역할을 지�
 
 # mongoose CRUD 메서드
 
-
-:--:--:
 메서드|설명
-find( [criteria], [callback] )|	조회 조건을 사용해 컬렉션의 데이터를 조회한다. 조회 결과는 콜백 함수로 전달된다.
-save( [options], [callback] )}	모델 인스턴스 객체의 데이터를 저장한다. 저장 결과는 콜백 함수로 전달된다.
-update( [criteria], [doc], [options], [callback] )}	컬렉션의 데이터를 조회한 후 업데이트 한다. where() 메서드와 함께 사용된다.
-remove( [criteria], [callback] )}	컬렉션의 데이터를 삭제한다.
+:---|:---
+find( [criteria], [callback] )|조회 조건을 사용해 컬렉션의 데이터를 조회한다. 조회 결과는 콜백 함수로 전달된다.
+save( [options], [callback] )}|모델 인스턴스 객체의 데이터를 저장한다. 저장 결과는 콜백 함수로 전달된다.
+update( [criteria], [doc], [options], [callback] )}|컬렉션의 데이터를 조회한 후 업데이트 한다. where() 메서드와 함께 사용된다.
+remove( [criteria], [callback] )}|컬렉션의 데이터를 삭제한다.
 
 
 ## 메서드
