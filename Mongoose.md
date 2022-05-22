@@ -37,23 +37,23 @@ remove( [criteria], [callback] )}	컬렉션의 데이터를 삭제한다.
 
 ``` JavaScript
 
-# find
+# find()
 const query = Person.find({name : 'charmsae'});
 //Person이라는 컬렉션 안에서 name이 charmsae인 documents를 '모두' 불러옵니다.
 
 
-# findOne
+# findOne()
 const query = Person.findOne({name : 'charmsae'});
 //Person이라는 컬렉션 안에서 name이 charmsae인 documents를 '하나'불러옵니다.
 
 
-# sort
+# find().sort()
 const query = Person.find({name : 'charmsae'}).sort(age : -1);
 //Person이라는 컬렉션 안에서 name이 charmsae인 모든 document를 age순으로 정렬합니다.
 //이때, age : 1이면 오름차순, age : -1이면 내림차순으로 정렬합니다.
 
 
-# select
+# findOne().select()
 const query = Person.findeOne({name : 'charmsae'}).select('age');
 //Person이라는 컬렉션 안에서 name이 charmsae인 documents를 '하나' 조회한 뒤,
 // age 필드만 가져옵니다.
