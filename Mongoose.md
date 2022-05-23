@@ -49,34 +49,34 @@
 ``` JavaScript
 
 # find()
-const query = Person.find({name : 'charmsae'});
+const query = await Person.find({name : 'charmsae'});
 //Person이라는 컬렉션 안에서 name이 charmsae인 documents를 '모두' 불러옵니다.
 
 
 
 # findOne()
-const query = Person.findOne({name : 'charmsae'});
+const query = await Person.findOne({name : 'charmsae'});
 //Person이라는 컬렉션 안에서 name이 charmsae인 documents를 '하나'불러옵니다.
 
 
 
 # sort()
-const query = Person.find({name : 'charmsae'}).sort(age : -1);
+const query = await Person.find({name : 'charmsae'}).sort(age : -1);
 //Person이라는 컬렉션 안에서 name이 charmsae인 모든 document를 age순으로 정렬합니다.
 //이때, age : 1이면 오름차순, age : -1이면 내림차순으로 정렬합니다.
 
 
 
 # where
-Person.find().where('name');
+await Person.find().where('name');
 //어떤 필드를 조작할지 정하는 쿼리입니다. 뒤에 equals, ne, exists, gt, ... 등의 쿼리를 사용하면 됩니다.
 
 
 
 # equals, ne
-Person.find().where('name').equals('zerocho')
-Person.find().equals('name', 'zerocho') // 위와 동일한 쿼리
-Person.find().ne('name', 'zerocho')
+await Person.find().where('name').equals('zerocho')
+await Person.find().equals('name', 'zerocho') // 위와 동일한 쿼리
+await Person.find().ne('name', 'zerocho')
 //equals는 일치하는 것, ne는 일치하지 않는 것입니다. 
 //exists와 ne를 포함한 쿼리들은 앞에 where이 있으면 where에서 지정한 필드를 업데이트합니다. 
 //where이 없다면 쿼리에서 직접 필드를 지정할 수도 있습니다.
@@ -84,13 +84,13 @@ Person.find().ne('name', 'zerocho')
 
 
 # skip, limit
-Person.find().skip(10).limit(5) // 11~15번째 사람 쿼리
+await Person.find().skip(10).limit(5) // 11~15번째 사람 쿼리
 //skip은 건너뛰기, limit은 개수 제한을 나타냅니다. limit은 0이면 0개를 가져오는 게 아니라 다 가져옵니다.
 
 
 
 # select
-const query = Person.findeOne({name : 'charmsae'}).select('age');
+const query = await Person.findeOne({name : 'charmsae'}).select('age');
 //프로젝션(특정 필드만 가져오는 기능)을 위한 메소드입니다.
 //Person이라는 컬렉션 안에서 name이 charmsae인 documents를 '하나' 조회한 뒤, age 필드만 가져옵니다.
 
@@ -123,10 +123,10 @@ const query = Person.findeOne({name : 'charmsae'}).select('age');
 
 ``` JavaScript
 
-const query = Person.deleteOne({name : 'charmsae'});
+const query = await Person.deleteOne({name : 'charmsae'});
 //Person이라는 컬렉션 안에서 name이 charmsae인 documents를 '하나' 삭제합니다.
 
-const query = Person.deleteMany({name : 'charmsae'});
+const query = await Person.deleteMany({name : 'charmsae'});
 //Person이라는 컬렉션 안에서 name이 charmsae인 documents를 '모두' 삭제합니다.
 
 
