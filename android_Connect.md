@@ -22,10 +22,8 @@
 - 친구 추가: [아이디] [날짜] 형식으로 표시
 
 
-## GET
-- 친구관리: 친구관리 버튼을 눌렀을 때 친구 추가와 친구 요청이 표시
 
-![image](https://user-images.githubusercontent.com/81403841/169987257-294fb482-91a9-4d0b-9dfb-a65edb88492b.png)
+![image](https://user-images.githubusercontent.com/81403841/169989884-d3214b58-d7b2-4465-b154-73dc3a6b8f99.png)
 
 
 
